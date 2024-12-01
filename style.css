@@ -1,0 +1,387 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #111;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+ /* General Styles for Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center align logo and menu items */
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  /* Logo Styling */
+  .navbar .logo img {
+    width: 70px;
+    height: 60px; 
+    max-height: 50px; 
+  }
+  
+  /* Navbar Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 1rem;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #03dac6;
+  }
+
+  
+/* Hamburger Icon Styles */
+.hamburger {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    background-color: white;
+    height: 4px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .nav-links.active {
+    display: flex !important;
+  }
+
+  /* Optional: If you need specific adjustments to the FAQ item */
+.nav-links li:last-child {
+    margin-right: 0; /* Remove right margin from the last item */
+  }
+  
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, #6200ea, #03dac6);
+    color: #fff;
+    text-align: center;
+    padding: 120px 1rem 50px; /* Adjusted for proper spacing */
+    position: relative;
+    height: 80vh;
+    margin-top: 0;
+  }
+  
+  .hero-heading {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    animation: slideIn 2s ease-in-out;
+  }
+  
+  .hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-buttons a {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  
+  .btn-primary {
+    background-color: #03dac6;
+    color: #121212;
+  }
+  
+  .btn-secondary {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  
+  .btn-primary:hover,
+  .btn-secondary:hover {
+    opacity: 0.9;
+  }
+  
+  /* Keyframes for Slide-in animation */
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* About Section */
+  .about {
+    background: linear-gradient(135deg, #1f1f1f, #333);
+    padding: 4rem 0;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .about-img {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about-text {
+    width: 45%;
+    padding-left: 2rem;
+  }
+  
+  .about-text h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .about-text p {
+    color: #bbb;
+    line-height: 1.8;
+    font-size: 1.1rem;
+  }
+  
+  /* Community Section */
+  .community {
+    background: linear-gradient(135deg, #6200ea, #03dac6);
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .community h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .social-btn {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.7rem 1.5rem;
+    background: #03dac6;
+    color: #121212;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  
+  .social-btn:hover {
+    background: #6200ea;
+    color: #fff;
+  }
+  
+  /* FAQ Section */
+  .faq {
+    background: #1f1f1f;
+    padding: 4rem 0;
+  }
+  
+  .faq h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+  
+  .faq-item {
+    margin-bottom: 1.5rem;
+  }
+  
+  .faq-item h3 {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  
+  .faq-item p {
+    color: #bbb;
+  }
+  
+ /* Footer Section */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background: #383737;
+    font-size: 0.9rem;
+    color: #fff;
+  }
+  
+  footer .social-icons {
+    margin-top: 1rem;
+  }
+  
+  footer .social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 2rem;
+    color: #d2d2d2;
+    transition: color 0.3s ease;
+  }
+  
+  footer .social-icon:hover {
+    color: #03dac6; /* Color on hover (optional) */
+  }
+  
+  footer .social-icon i {
+    font-size: 2rem;
+  }
+  
+  
+
+
+  
+
+/* Media Queries */
+
+/* Tablet and Small Screens */
+@media (max-width: 1024px) {
+    .hamburger {
+      display: flex; /* Display hamburger icon */
+    }
+  
+    /* Hide nav links on mobile/tablet */
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .nav-links.active {
+      display: flex; /* Show links when active */
+    }
+  
+    .nav-links li {
+      margin: 1rem 0;
+    }
+  
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-buttons a {
+      padding: 0.8rem 1.5rem;
+    }
+  
+    .about-img {
+      width: 90%;
+      margin-bottom: 2rem;
+    }
+  
+    .about-text {
+      width: 90%;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+    }
+  
+    .navbar .logo img {
+      width: 100px;
+    }
+  
+    .social-links {
+      flex-direction: column;
+    }
+  }
+  
+  /* Mobile Screens */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-buttons a {
+      padding: 0.8rem 1.5rem;
+    }
+  
+    .about-img {
+      width: 100%;
+    }
+  
+    .about-text {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .navbar .logo img {
+      width: 100px;
+    }
+  
+    .nav-links a {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Mobile Landscape */
+  @media (max-width: 480px) {
+    .hero-content h1 {
+      font-size: 1.8rem;
+    }
+  
+    .hero-buttons a {
+      padding: 0.6rem 1.2rem;
+    }
+  
+    .about-img {
+      width: 100%;
+    }
+  
+    .about-text {
+      width: 100%;
+    }
+  
+    .navbar {
+      padding: 1rem;
+    }
+  
+    .navbar .logo img {
+      width: 80px;
+    }
+  
+    .nav-links a {
+      font-size: 1rem;
+    }
+  }
